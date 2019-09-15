@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube random comment picker</title>
+</head>
+<body>
+<form action="/pick_comment" method="get">
+    URL:<input type="text" name="url" placeholder="https://www.youtube.com/watch?v="><br>
+    <button type="submit">Get random comment</button>
+</form>
+Author: <div th:text="${author}"></div>
+Comment: <div th:text="${message}"></div>
+
+</body>
+</html>
